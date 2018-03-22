@@ -5,7 +5,15 @@
 */
 
 body {
-margin: 0;
+  margin: 0;
+  line-height: 1.8;
+  background: #FFF; /*#eeeff0;*/
+  
+  /*
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  */
 }
 
 h1 {
@@ -16,6 +24,31 @@ p {
     font-size: 14px;
 }
 
+hr{
+	
+	border-bottom-width: 0px;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-top-color: rgb(204, 204, 204);
+    border-right-color: rgb(204, 204, 204);
+    border-bottom-color: rgb(204, 204, 204);
+    border-left-color: rgb(204, 204, 204);
+    background-color: rgb(204, 204, 204);
+	
+	display: block;
+    unicode-bidi: isolate;
+    -webkit-margin-before: 0.5em;
+    -webkit-margin-after: 0.5em;
+    -webkit-margin-start: auto;
+    -webkit-margin-end: auto;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 1px;
+	
+}
+
 ul{
 	 list-style-type: none;
 }
@@ -24,12 +57,12 @@ li{
 }
 
 .header {
-
-margin-top: 0px;
 padding:0px;
+height:200px;
 }
 .top-header{
-	margin-top: 0px;
+	margin-top: 10px;
+	
 }
 
 .search-right{
@@ -37,6 +70,7 @@ padding:0px;
 	float:right;
 	display: inline;
 	padding-right:60px;
+	position: sticky;
 
 }
 .search-right ul{
@@ -49,12 +83,12 @@ padding:0px;
 	}
 
 .header-logo{
-margin-top: 5px;
-text-align: center;
-padding:60px;
-background:no-repeat;
-background-position:top center;
-
+    text-align: center;
+    padding:35px;
+    padding-top:65px;
+    background:no-repeat;
+    background-position:top center;
+	
 }
 
 /*social icon start*/
@@ -62,10 +96,10 @@ background-position:top center;
 	margin-top: 0px;
 	float:left;
 	display:inline;
-	padding-left:15px;
 	padding-left:0;
     margin-left:-5px;
     list-style:none;
+
 }
 .social-left ul{
 	list-style-type: none;
@@ -80,7 +114,6 @@ background-position:top center;
     width: 20px;
     height: 20px;
     line-height: 20px;
-	
     color: #000000;
 }
 
@@ -207,18 +240,17 @@ background-position:top center;
 /*menu START*/
 .menu{
   width: 100%;
-  position: fixed;
+  position: sticky;
   text-align:center;
 
 }
 .menu-line{
 	clear: both;
-
 	border-top: 1px solid #d6d6d6;
 	border-bottom: 1px solid #d6d6d6;
-	padding-top:15px;
-	padding-bottom:15px;
-	text-align: center;
+	padding-top:12px;
+	padding-bottom:12px;
+	text-align: left;
     text-decoration: none;
     display: inline-block;
 	
@@ -253,9 +285,11 @@ nav a:hover:before{
   animation:in 0.2s cubic-bezier(1, 0, 0.58, 0.97) 1 both;
 
 }
+
+/*opens menu class */
 .navd {
 	
-    position: relative; /*opens menu*/
+    position: relative; 
     display: inline-block;
 }
 
@@ -272,7 +306,6 @@ nav a:hover:before{
 .navd:hover .navd-content {
     display: block;
 }
-
 
 @keyframes in{
   0%{
@@ -318,14 +351,303 @@ nav a:hover:before{
 /*menu finish*/
 
 
+/*page upload start*/
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    /*-webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);*/
+    -webkit-transform: translate3d(0, 50px, 0);
+    transform: translate3d(0, 50px, 0);
+  }
 
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    /*-webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);*/
+    -webkit-transform: translate3d(0, 50px, 0);
+    transform: translate3d(0, 50px, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+/*page upload finish */
+
+
+/*Content Css Start*/
+.content{
+	padding-top:24px;
+    padding-bottom:24px;
+	min-height:300px;
+	
+}
+
+.widget-title{
+    
+	clear: both;
+	display: block;
+	overflow: hidden;
+	padding: 20px 0;
+	border-bottom: 1px dotted #333;
+}
+
+.write-line{ /*hr çizgisi için tanımladı düzeltilecek*/
+	
+	display: block;
+    unicode-bidi: isolate;
+    -webkit-margin-before: 0.5em;
+    -webkit-margin-after: 0.5em;
+    -webkit-margin-start: auto;
+    -webkit-margin-end: auto;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 1px;
+	
+	
+    border-bottom-width: 0px;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-top-color: rgb(204, 204, 204);
+    border-right-color: rgb(204, 204, 204);
+    border-bottom-color: rgb(204, 204, 204);
+    border-left-color: rgb(204, 204, 204);
+    background-color: rgb(204, 204, 204);
+	
+}
+
+/*Content Css Finish */
+
+
+
+/* Footer */
 .footer{
   text-align: center;
   background-color: #eaeaea;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  padding: 1rem;
-  
+  position: sticky;
 }
+.footer h2 {
+    margin-bottom: 24px;
+}
+.footer p {
+    color: #c9f0ff;
+}
+
+.footer-bg {
+    background-color: #3e5267;
+}
+
+.footer-bg.darken-2 {
+    background-color: #304254 !important;
+}
+
+.footer-text {
+    color: #FFF;
+}
+
+.footer-text a{
+    color: #FFF;
+}
+.footer-text a:hover{
+    color: #5dd2ff;
+}
+
+
+/* Back to tap */
+.footer .container {
+    position: relative;
+}
+.back-top {
+    position: absolute!important;
+	top:-55px;
+    right: 0;
+}
+.back-top a{
+	color: #FFF;
+}
+
+.back-top i {
+    font-size: 4rem!important;
+}
+.back-top.white i {
+    color: #FFF;
+}
+.back-top-color{
+	color: black;
+}
+
+/*TT Animate CSS*/
+.hblog-animate i {
+    text-align         : center;
+    overflow           : hidden;
+    -webkit-transition : all 0.5s;
+    -moz-transition    : all 0.5s;
+    transition         : all 0.5s;
+}
+
+.hblog-animate i::before {
+    speak                       : none;
+    display                     : block;
+    -webkit-font-smoothing      : subpixel-antialiased !important;
+    -webkit-backface-visibility : hidden;
+    -moz-backface-visibility    : hidden;
+    -ms-backface-visibility     : hidden;
+}
+
+/*Left To Right*/
+.hblog-animate.ltr i:hover::before {
+    -webkit-animation : LeftToRight 0.3s forwards;
+    -moz-animation    : LeftToRight 0.3s forwards;
+    animation         : LeftToRight 0.3s forwards;
+}
+
+.hblog-animate.ltr i:before {
+    -webkit-animation : RightToLeft 0.3s forwards;
+    -moz-animation    : RightToLeft 0.3s forwards;
+    animation         : RightToLeft 0.3s forwards;
+}
+
+
+/*Right To Left*/
+.hblog-animate.btt i:hover::before {
+    -webkit-animation : BottomToTop 0.3s forwards;
+    -moz-animation    : BottomToTop 0.3s forwards;
+    animation         : BottomToTop 0.3s forwards;
+}
+
+.hblog-animate.btt i:before {
+    -webkit-animation : TopToBottom 0.3s forwards;
+    -moz-animation    : TopToBottom 0.3s forwards;
+    animation         : TopToBottom 0.3s forwards;
+}
+
+
+
+
+
+
+
+
+
+/* Social  */
+.social-link {
+    margin-bottom: 0;
+}
+.social-link li {
+    display: inline-block;
+}
+.social-link li a i {
+    display: block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.social-link li a i{
+    color: #fff;
+}
+
+.social-link li a i:hover {
+    color: #03a9f4 ;
+    background: #fff;
+}
+
+.social-link.dark li a i{
+    color: #202020;
+}
+.social-link.dark li a i:hover {
+    color: #fff ;
+    background: #03a9f4;
+}
+
+
+/* footer css 2*/
+.footer-four .social-link li+li {
+    margin-left: 15px;
+}
+
+.footer-four .social-link li a {
+    line-height: 14px;
+}
+.footer-four .social-link li a i{
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    line-height: 40px;
+    color: #fff;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+.footer-four .social-link li a i:hover {
+    color: #0379ae;
+}
+
+
+.footer-four hr {
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+
+.footer-four .footer-logo {
+    margin: 45px 0 35px;
+}
+
+.footer-intro p {
+    margin: 0px 0px 0px;
+	text-align:center;
+}
+
+
+.footer-four .secondary-footer {
+    padding: 18px 0;
+}
+.footer-four .secondary-footer ul {
+    margin: 0;
+}
+.footer-four .secondary-footer ul li{
+    display: inline-block;
+    margin-right: 30px;
+}
+.footer-four .secondary-footer ul li:last-child{
+    margin-right: 0;
+}
+.footer-four .secondary-footer ul li a{
+    display: block;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.footer-four .secondary-footer ul li a:hover {
+    color: #81ddff;
+}
+
+
+
+
