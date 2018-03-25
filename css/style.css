@@ -441,6 +441,48 @@ nav a:hover:before{
 	
 }
 
+.grid-container { /*content grid*/
+   display: grid;
+   grid-gap: 50px;
+   grid-template-columns: auto auto auto;
+   padding: 10px;
+}
+.grid-item {
+   text-align: center;
+}
+
+/*grid çalışma*/
+.blog-box{
+    margin-left:30px;
+	height: 30px;
+	border:0px solid transparent;
+	background-color:rgba(255, 255, 255, 1);
+	border-radius:0;
+	z-index:1;
+	position:absolute;
+	width:128px;
+}
+	
+.box-title{
+	font-size:18px;
+
+}
+.post{
+	left: 20px; 
+	top: 221px; 
+
+
+}
+.post-image{
+	width: 280px; 
+	height: 280px; 
+	object-fit: cover;
+	z-index:2;
+}
+.post-font{
+	font-family:sans-serif;
+}
+
 /*Content Css Finish */
 
 
@@ -462,7 +504,7 @@ nav a:hover:before{
     background-color: #3e5267;
 }
 
-.footer-bg.darken-2 {
+.footer-bg.footer-bgcolor {
     background-color: #304254 !important;
 }
 
@@ -547,13 +589,6 @@ nav a:hover:before{
 }
 
 
-
-
-
-
-
-
-
 /* Social  */
 .social-link {
     margin-bottom: 0;
@@ -589,14 +624,14 @@ nav a:hover:before{
 
 
 /* footer css 2*/
-.footer-four .social-link li+li {
+.footer-top .social-link li+li {
     margin-left: 15px;
 }
 
-.footer-four .social-link li a {
+.footer-top .social-link li a {
     line-height: 14px;
 }
-.footer-four .social-link li a i{
+.footer-top .social-link li a i{
     width: 40px;
     height: 40px;
     font-size: 18px;
@@ -605,17 +640,17 @@ nav a:hover:before{
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
 }
-.footer-four .social-link li a i:hover {
+.footer-top .social-link li a i:hover {
     color: #0379ae;
 }
 
 
-.footer-four hr {
+.footer-top hr {
     border-top: 1px solid rgba(255, 255, 255, 0.25);
 }
 
 
-.footer-four .footer-logo {
+.footer-top .footer-logo {
     margin: 45px 0 35px;
 }
 
@@ -625,28 +660,31 @@ nav a:hover:before{
 }
 
 
-.footer-four .secondary-footer {
+.footer-top .down-footer {
     padding: 18px 0;
 }
-.footer-four .secondary-footer ul {
+.footer-top .down-footer ul {
     margin: 0;
 }
-.footer-four .secondary-footer ul li{
+.footer-top .down-footer ul li{
     display: inline-block;
     margin-right: 30px;
 }
-.footer-four .secondary-footer ul li:last-child{
+.footer-top .down-footer ul li:last-child{
     margin-right: 0;
 }
-.footer-four .secondary-footer ul li a{
+.footer-top .down-footer ul li a{
     display: block;
     color: #fff;
     font-weight: 500;
     text-transform: uppercase;
 }
-.footer-four .secondary-footer ul li a:hover {
+.footer-top .down-footer ul li a:hover {
     color: #81ddff;
 }
+
+
+
 
 
 
