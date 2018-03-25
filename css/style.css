@@ -73,6 +73,23 @@ height:200px;
 	position: sticky;
 
 }
+.search-right a:link{
+	text-decoration: none;
+}
+.search-right a:visited{
+	text-decoration: none;
+}
+.search-right a:active{
+	text-decoration: none;
+}
+.search-right a:hover{
+	text-decoration: none;
+}
+
+.search-right li i{
+	color:black;
+}
+
 .search-right ul{
 	list-style-type: none;
 	}
@@ -603,7 +620,21 @@ nav a:hover:before{
     line-height: 30px;
     text-align: center;
     border-radius: 50%;
+	text-decoration:none;
 }
+.social-link a:link{
+	text-decoration: none;
+}
+.social-link a:visited{
+	text-decoration: none;
+}
+.social-link a:active{
+	text-decoration: none;
+}
+.social-link a:hover{
+	text-decoration: none;
+}
+
 
 .social-link li a i{
     color: #fff;
