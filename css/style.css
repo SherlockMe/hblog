@@ -25,7 +25,6 @@ p {
 }
 
 hr{
-	
 	border-bottom-width: 0px;
     border-top-style: solid;
     border-right-style: solid;
@@ -36,7 +35,6 @@ hr{
     border-bottom-color: rgb(204, 204, 204);
     border-left-color: rgb(204, 204, 204);
     background-color: rgb(204, 204, 204);
-	
 	display: block;
     unicode-bidi: isolate;
     -webkit-margin-before: 0.5em;
@@ -46,7 +44,6 @@ hr{
     overflow: hidden;
     border-style: inset;
     border-width: 1px;
-	
 }
 
 ul{
@@ -420,11 +417,9 @@ nav a:hover:before{
 	padding-top:24px;
     padding-bottom:24px;
 	min-height:300px;
-	
 }
 
 .widget-title{
-    
 	clear: both;
 	display: block;
 	overflow: hidden;
@@ -433,7 +428,6 @@ nav a:hover:before{
 }
 
 .write-line{ /*hr çizgisi için tanımladı düzeltilecek*/
-	
 	display: block;
     unicode-bidi: isolate;
     -webkit-margin-before: 0.5em;
@@ -443,8 +437,6 @@ nav a:hover:before{
     overflow: hidden;
     border-style: inset;
     border-width: 1px;
-	
-	
     border-bottom-width: 0px;
     border-top-style: solid;
     border-right-style: solid;
@@ -499,10 +491,7 @@ nav a:hover:before{
 .post-font{
 	font-family:sans-serif;
 }
-
 /*Content Css Finish */
-
-
 
 /* Footer */
 .footer{
@@ -536,14 +525,13 @@ nav a:hover:before{
     color: #5dd2ff;
 }
 
-
 /* Back to tap */
 .footer .container {
     position: relative;
 }
 .back-top {
     position: absolute!important;
-	top:-55px;
+	top:-41px;
     right: 0;
 }
 .back-top a{
@@ -551,7 +539,7 @@ nav a:hover:before{
 }
 
 .back-top i {
-    font-size: 4rem!important;
+    font-size: 3rem!important;
 }
 .back-top.white i {
     color: #FFF;
@@ -591,7 +579,6 @@ nav a:hover:before{
     animation         : RightToLeft 0.3s forwards;
 }
 
-
 /*Right To Left*/
 .hblog-animate.btt i:hover::before {
     -webkit-animation : BottomToTop 0.3s forwards;
@@ -604,7 +591,6 @@ nav a:hover:before{
     -moz-animation    : TopToBottom 0.3s forwards;
     animation         : TopToBottom 0.3s forwards;
 }
-
 
 /* Social  */
 .social-link {
@@ -634,17 +620,13 @@ nav a:hover:before{
 .social-link a:hover{
 	text-decoration: none;
 }
-
-
 .social-link li a i{
     color: #fff;
 }
-
 .social-link li a i:hover {
     color: #03a9f4 ;
     background: #fff;
 }
-
 .social-link.dark li a i{
     color: #202020;
 }
@@ -653,16 +635,15 @@ nav a:hover:before{
     background: #03a9f4;
 }
 
-
 /* footer css 2*/
-.footer-top .social-link li+li {
+.social-link li+li {
     margin-left: 15px;
 }
 
-.footer-top .social-link li a {
+.social-link li a {
     line-height: 14px;
 }
-.footer-top .social-link li a i{
+.social-link li a i{
     width: 40px;
     height: 40px;
     font-size: 18px;
@@ -671,18 +652,12 @@ nav a:hover:before{
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
 }
-.footer-top .social-link li a i:hover {
+.social-link li a i:hover {
     color: #0379ae;
 }
 
-
-.footer-top hr {
-    border-top: 1px solid rgba(255, 255, 255, 0.25);
-}
-
-
-.footer-top .footer-logo {
-    margin: 45px 0 35px;
+.footer-logo {
+    margin: 35px 0 25px;
 }
 
 .footer-intro p {
@@ -690,28 +665,97 @@ nav a:hover:before{
 	text-align:center;
 }
 
+.top-footer hr {
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+}
 
-.footer-top .down-footer {
+/*
+.top-footer{
     padding: 18px 0;
+	    margin: 45px 0 35px;
 }
-.footer-top .down-footer ul {
-    margin: 0;
+
+.top-footer li+li {
+    margin-left: 15px;
 }
-.footer-top .down-footer ul li{
+
+.top-footer li a {
+    line-height: 14px;
+}
+
+.top-footer ul li{
     display: inline-block;
     margin-right: 30px;
 }
-.footer-top .down-footer ul li:last-child{
+.top-footer ul li:last-child{
     margin-right: 0;
 }
-.footer-top .down-footer ul li a{
+.top-footer ul li a{
     display: block;
     color: #fff;
     font-weight: 500;
     text-transform: uppercase;
 }
-.footer-top .down-footer ul li a:hover {
+.top-footer ul li a:hover {
     color: #81ddff;
+}
+.top-footer li a i{
+    font-size: 18px;
+    line-height: 40px;
+    color: #fff;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+.top-footer li a i:hover {
+    color: #0379ae;
+}
+*/
+.down-footer {
+	padding: 10px 0;
+	font-size: 9px;
+	letter-spacing: 2px;
+	
+	}
+.down-footer ul{
+	margin: 0;
+	padding: 0;
+	display: inline-block !important;
+	text-align: left;
+	text-transform: uppercase;
+	 display: inline-block;
+    margin-right: 30px;
+}
+.down-footer ul li{
+	margin: 0;
+	padding: 0;
+	display: inline-block !important;
+	text-align: left;
+	text-transform: uppercase;
+    display: inline-block;
+
+}
+.down-footer ul li:before {
+	content: '//';
+	padding: 0 12px 0 4px;
+	letter-spacing: -2px;
+	color:white;
+}
+.down-footer ul li a {
+    /*  display: block; 
+    font-weight: 500;
+	text-decoration:none;*/
+	text-decoration: none;
+	/*color: #58585a;*/
+	color: #fff;
+	transition: all .3s ease-in-out; 
+	
+}
+.down-footer ul li a:hover {
+    color: #81ddff;
+}
+
+.down-footer ul li:first-child:before {
+	display: none;
 }
 
 
