@@ -492,18 +492,23 @@ nav a:hover:before{
 /*Post Grid*/
 .grid-percent{
    display: grid;
-   grid-gap: 50px;
+   
+   grid-gap: 20px;
    grid-template-columns: auto auto auto;
-   padding: 10px;
-   position: relative;
-   min-height: 1px;
-   padding-right: 15px;
-   padding-left: 15px;
-   width:40%;
+   
+    padding: 10px;
 
+    min-height: 1px;
+
+    margin-left: 3%;
+    margin-right:2%;
+	
 }
 
 .post-wrapper {
+	display:inline;
+	float:left;
+	
 	padding: 16px;
 	border: 1px solid #eee;
     background-color: #fff;
@@ -529,13 +534,11 @@ nav a:hover:before{
 	margin-top:0;
 	text-align:center;
 }
+
 @media ( max-width: 479px) {
    .entry-title {
         font-size: 12px;
         line-height: 15px;
-    }
-    .post-wrapper .author-thumb {
-        display: none;
     }
     .entry-header .posted-in {
         display: none;
@@ -548,6 +551,7 @@ nav a:hover:before{
     margin-right: 5px;
     font-size: 14px;
 }
+
 @media ( max-width: 479px) {
     .entry-header .entry-title {
         font-size: 12px;
