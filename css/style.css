@@ -479,6 +479,26 @@ nav a:hover:before{
 	left: 20px; 
 	top: 221px; 
 }
+
+/*box effect*/
+.box-effect{
+-webkit-transition: background-color 1s ease-in-out; /* Chrome ve Safari */
+-moz-transition: background-color 1s ease-in-out; /* Mozilla */
+-o-transition: background-color 1s ease-in-out; /* Opera */
+transition: background-color 1s ease-in-out; /* Standart CSS3 Kodu */
+background-color:#ffffff;	
+border:radius; /*not work*/
+}
+
+.box-effect:hover{
+-webkit-transition: background-color 0s ease-in-out; /* Chrome ve Safari */
+-moz-transition: background-color 0s ease-in-out; /* Mozilla */
+-o-transition: background-color 0s ease-in-out; /* Opera */
+transition: background-color 0s ease-in-out; /* Standart CSS3 Kodu */
+background-color:#fff7f7; 
+border:radius;  /*not work*/
+}
+
 .post-image{
 	width: 280px; 
 	height: 280px; 
