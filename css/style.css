@@ -55,7 +55,6 @@ li{
 	 list-style-type: none;
 }
 
-
 input[type=submit] {
 	cursor:pointer;/*mause icon*/
 	text-transform:uppercase;
@@ -67,7 +66,7 @@ input[type=submit] {
 	padding:11px 21px;
 	margin-top:14px;
 	display:inline-block;
-	border:none;/*çerçeve*/
+	border:none;/*Ã§erÃ§eve*/
 	/*mozilla ui*/
 	-o-transition:.3s;
 	-ms-transition:.3s;
@@ -81,17 +80,6 @@ input[type=submit] {
 input[type=submit]:hover {
 	background:#333;
 	color:#FFF;
-}
-input, select, textarea {
-	border:1px solid #ddd;
-	color:#888;
-	padding:9px 10px;
-	width:100%;
-	box-sizing:border-box;
-}
-input:focus, select:focus, textarea:focus {
-	border:1px solid #c4c4c4;
-	outline:none;
 }
 
 .header {
@@ -588,8 +576,7 @@ border:radius;  /*not work*/
 }
 .post-header h1 {
     color: #000;
-	
-	font-size: 14px;
+	font-size: 17px;
     letter-spacing: 1px;
     text-transform: uppercase;
     font-weight: 400;
@@ -609,9 +596,30 @@ border:radius;  /*not work*/
 }
 
 .post-submit{
-    width: auto;
-    font-size: 10px;
-    margin-top: 0;
+margin-left:80%;
+}
+
+.form-label{
+    color: #888;
+    padding: 9px 10px;
+    width: 100%;
+	font-family:sans-serif;
+}
+.form-text{
+    border: 1px solid #ddd;
+    color: #888;
+    padding: 9px 10px;
+    width: 100%;
+    box-sizing: border-box;
+	font-family:sans-serif;
+}
+.form-textarea{
+    border: 1px solid #ddd;
+    color: #888;
+    padding: 9px 10px;
+    width: 100%;
+    box-sizing: border-box;
+	font-family:sans-serif;
 }
 
 /*Post Grid*/
