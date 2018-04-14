@@ -560,6 +560,11 @@ background-color:#fff7f7;
 border:radius;  /*not work*/
 }
 
+.center{
+width: 600px;
+margin: 0px auto;
+}
+
 .post-image{
 	width: 280px; 
 	height: 280px; 
@@ -597,6 +602,21 @@ border:radius;  /*not work*/
 
 .post-submit{
 margin-left:80%;
+}
+
+.post-head{
+	font-family:'Oswald', sans-serif;
+	font-size:18px;
+	text-transform:uppercase;
+	letter-spacing:1px;
+	line-height:1.4em;
+	margin-bottom:8px;
+}
+.post-date{
+	font-style:italic;
+	font-size:13px;
+	margin-top:-8px;
+	margin-bottom:-10px;
 }
 
 .form-label{
@@ -898,18 +918,32 @@ margin-left:80%;
 /* Social  */
 .social-link {
     margin-bottom: 0;
+	text-align:center;
 }
+.social-link li+li {
+    margin-left: 15px;
+}
+
+.social-link li a {
+    line-height: 14px;
+}
+
 .social-link li {
     display: inline-block;
 }
 .social-link li a i {
     display: block;
-    width: 30px;
-    height: 30px;
     line-height: 30px;
     text-align: center;
     border-radius: 50%;
 	text-decoration:none;
+	width: 40px;
+    height: 40px;
+    font-size: 18px;
+    line-height: 40px;
+    color: #000;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
 }
 .social-link a:link{
 	text-decoration: none;
@@ -923,40 +957,16 @@ margin-left:80%;
 .social-link a:hover{
 	text-decoration: none;
 }
-.social-link li a i{
-    color: #fff;
-}
 .social-link li a i:hover {
-    color: #03a9f4 ;
-    background: #fff;
+    color: #fff;
+    background: #212121;
 }
 .social-link.dark li a i{
     color: #202020;
 }
 .social-link.dark li a i:hover {
-    color: #fff ;
-    background: #03a9f4;
-}
-
-/* footer css 2*/
-.social-link li+li {
-    margin-left: 15px;
-}
-
-.social-link li a {
-    line-height: 14px;
-}
-.social-link li a i{
-    width: 40px;
-    height: 40px;
-    font-size: 18px;
-    line-height: 40px;
     color: #fff;
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-}
-.social-link li a i:hover {
-    color: #0379ae;
+    background: #03a9f4;
 }
 
 .footer-logo {
@@ -1025,8 +1035,8 @@ margin-left:80%;
 	display: inline-block !important;
 	text-align: left;
 	text-transform: uppercase;
-	 display: inline-block;
-    margin-right: 30px;
+	display: inline-block;
+    /*margin-right: 30px;*/
 }
 .down-footer ul li{
 	margin: 0;
